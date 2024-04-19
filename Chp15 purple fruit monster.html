@@ -1,0 +1,95 @@
+<body></body>
+<script src="http://gamingJS.com/Three.js"></script>
+<script src="http://gamingJS.com/physi.js"></script>
+<script src="http://gamingJS.com/ChromeFixes.js"></script>
+<script>
+    Physics.scripts.ammo = "http://gamingJS.com/ammo.js"
+    Physics.scripts.worker = "physijs_worker.js"
+
+    // This is where stuff in our game will happen:
+    var scene = new THREE.Scene();
+
+    // This is what sees the stuff:
+    var aspect_ratio = window.innerWidth / window.innerHeight;
+    var camera = new THREE.PerspectiveCamera(75, aspect_ratio, 1, 10000);
+    camera.position.z = 500;
+    scene.add(camera);
+
+    // This will draw what the camera sees onto the screen:
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // ******** START CODING ON THE NEXT LINE ********
+    function myFunc() {
+        const audioElem = document.getElementById("audioElem")
+        audioElem.play()
+        setTimeout(function() {
+            const audioElem1 = document.getElementById("audioElem1")
+            audioElem1.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem2 = document.getElementById("audioElem2")
+            audioElem2.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem3 = document.getElementById("audioElem3")
+            audioElem3.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem4 = document.getElementById("audioElem4")
+            audioElem4.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem5 = document.getElementById("audioElem5")
+            audioElem5.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem6 = document.getElementById("audioElem6")
+            audioElem6.play()
+            
+        }, 1000)
+        setTimeout(function() {
+            const audioElem7 = document.getElementById("audioElem7")
+            audioElem7.play()
+            
+        }, 1000)
+        const audioElem8 = document.getElementById("audioElem8")
+        audioElem8.play()
+        const btnElem = document.getElementById('btnElem')
+        btnElem.remove();
+        
+    }
+    
+    renderer.render(scene, camera);
+</script>
+<style>
+    .bigbutton {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+    }
+</style>
+<div style="color:red">
+    YOU JUST GOT RICKROLLED LOLOLOLOLOLOLOLOLOLOLOLOLOLOLOLOLOLOLOLOL (There is no 2 million dollars) also I can do roblox now cuz you agreed
+</div>
+<button onclick="myFunc()" id="btnElem" class="bigbutton">CLICK ME FOR FREEDOM AND $200000000000000000 by clicking you agree to the text thats about to show up</button>
+<audio style="opacity:0" id="audioElem" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem1" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem2" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem3" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem4" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem5" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem6" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem7" src="nevergonna.mp3" controls="" autoplay></audio>
+<audio style="opacity:0" id="audioElem8" src="nevergonna.mp3" controls="" autoplay></audio>
